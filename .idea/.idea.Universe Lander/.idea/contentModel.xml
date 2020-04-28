@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Elscherino\AppData\local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Elscherino\AppData\local\JetBrains\Rider2020.1\resharper-host\local\Transient\ReSharperHost\v201\SolutionCaches\_Universe Lander.547345165.00" t="ExcludeRecursive" />
+    <e p="D:\Unity Projects\Universe Lander" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="PolygonSciFiSpace" t="Include">
+          <e p="Shaders" t="Include">
+            <e p="POLYGON_SpaceShip_Rim.shader" t="Include" />
+            <e p="POLYGON_Triplanar.shader" t="Include" />
+            <e p="SyntyStudios_Asteroid.shader" t="Include" />
+            <e p="SyntyStudios_Planet.shader" t="Include" />
+            <e p="SyntyStudios_Planet_Lines.shader" t="Include" />
+            <e p="SyntyStudios_Triplanar_ObjectSpace.shader" t="Include" />
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="CelestialBody.cs" t="Include" />
+          <e p="CelestialBodyTrajectory.cs" t="Include" />
+          <e p="Jobs" t="Include">
+            <e p="Jobs.cs" t="Include" />
+          </e>
+          <e p="TrajectoryVisualizer.cs" t="Include" />
+          <e p="Universe.cs" t="Include" />
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="Universe Lander.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>

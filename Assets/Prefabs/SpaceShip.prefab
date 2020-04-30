@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 522752627473404855}
   - component: {fileID: 515542470510039191}
   - component: {fileID: 505481893393665311}
-  m_Layer: 0
+  - component: {fileID: 1184575143128813873}
+  m_Layer: 8
   m_Name: Cockpit_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81,6 +82,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &1184575143128813873
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528369822197323423}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.1773956, y: 2.8199625, z: 3.9616413}
+  m_Center: {x: 0, y: 0.00000017881393, z: -0.00000035762787}
 --- !u!1 &630020593015430497
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,7 +106,8 @@ GameObject:
   - component: {fileID: 624502674999943325}
   - component: {fileID: 634857391689357555}
   - component: {fileID: 642294908830676757}
-  m_Layer: 0
+  - component: {fileID: 8958357031376986711}
+  m_Layer: 8
   m_Name: Engine_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -163,6 +178,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &8958357031376986711
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630020593015430497}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9274292, y: 1.8203857, z: 5.970825}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &731776258283978915
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,6 +201,7 @@ GameObject:
   m_Component:
   - component: {fileID: 239304187009633654}
   - component: {fileID: 1537810002714463720}
+  - component: {fileID: 5472953076330063642}
   m_Layer: 0
   m_Name: SpaceShip
   m_TagString: Untagged
@@ -194,7 +223,6 @@ Transform:
   - {fileID: 4365302936815638540}
   - {fileID: 5263217967875441671}
   - {fileID: 4362332931431925238}
-  - {fileID: 5463390429580075513}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -214,6 +242,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5472953076330063642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731776258283978915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c27d47adffa0b614a9f4e02007f52d32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spaceShipRb: {fileID: 1537810002714463720}
+  pitchSpeed: 5
+  yawSpeed: 5
+  rollSpeed: 5
+  thrustSpeed: 5
 --- !u!1 &1759214344050295715
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,7 +270,8 @@ GameObject:
   - component: {fileID: 1765041755236992479}
   - component: {fileID: 1736169503909219469}
   - component: {fileID: 1746760033195136233}
-  m_Layer: 0
+  - component: {fileID: 8447181500874344350}
+  m_Layer: 8
   m_Name: LandingGear_Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -293,6 +339,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &8447181500874344350
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759214344050295715}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.62205976, y: 1.4919902, z: 1.8075683}
+  m_Center: {x: 0, y: -0.7459951, z: -0.03456545}
 --- !u!1 &1780705163601114458
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,7 +363,8 @@ GameObject:
   - component: {fileID: 1775864742312159844}
   - component: {fileID: 1787217336239200588}
   - component: {fileID: 1792758789521799822}
-  m_Layer: 0
+  - component: {fileID: 6551810884598720701}
+  m_Layer: 8
   m_Name: LandingGear_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -372,6 +432,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &6551810884598720701
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780705163601114458}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9536619, y: 1.4919902, z: 2.0077257}
+  m_Center: {x: -0.000000074505806, y: -0.7459951, z: -0.18836972}
 --- !u!1 &1879973661263385022
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,7 +456,8 @@ GameObject:
   - component: {fileID: 1874537179798449722}
   - component: {fileID: 1902675385775684816}
   - component: {fileID: 1891930213555777354}
-  m_Layer: 0
+  - component: {fileID: 1687848165473120926}
+  m_Layer: 8
   m_Name: Spoiler_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -451,6 +525,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &1687848165473120926
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879973661263385022}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.466827, y: 3.228784, z: 6.759668}
+  m_Center: {x: -2.8533823, y: -1.3282442, z: 0}
 --- !u!1 &2101563638850892976
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,7 +549,8 @@ GameObject:
   - component: {fileID: 2105774246404320142}
   - component: {fileID: 2112590257500543142}
   - component: {fileID: 2124922258644777828}
-  m_Layer: 0
+  - component: {fileID: 1620902601271961282}
+  m_Layer: 8
   m_Name: LandingGear_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -530,51 +618,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!1 &2650644130041471247
-GameObject:
+--- !u!65 &1620902601271961282
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5463390429580075513}
-  - component: {fileID: 2530492566469529632}
-  m_Layer: 0
-  m_Name: Collider
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5463390429580075513
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2650644130041471247}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.16499999, z: -0.31860003}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 239304187009633654}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &2530492566469529632
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2650644130041471247}
+  m_GameObject: {fileID: 2101563638850892976}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 10
-  m_Height: 24.86
-  m_Direction: 0
-  m_Center: {x: 0, y: 0, z: 1.15}
+  serializedVersion: 2
+  m_Size: {x: 0.9536619, y: 1.4919902, z: 2.0077257}
+  m_Center: {x: -0.000000074505806, y: -0.7459951, z: -0.18836972}
 --- !u!1 &2761120151417265388
 GameObject:
   m_ObjectHideFlags: 0
@@ -586,7 +642,8 @@ GameObject:
   - component: {fileID: 2763944234116437870}
   - component: {fileID: 2748234778122534692}
   - component: {fileID: 2738743856510777604}
-  m_Layer: 0
+  - component: {fileID: 5943415953260764211}
+  m_Layer: 8
   m_Name: LandingGear_Coupling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -654,6 +711,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &5943415953260764211
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2761120151417265388}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.1968822, y: 6.8272347, z: 7.621535}
+  m_Center: {x: -0.0000002384186, y: 0.0000019073486, z: 0.0000011920929}
 --- !u!1 &4360063255846485672
 GameObject:
   m_ObjectHideFlags: 0
@@ -665,7 +735,7 @@ GameObject:
   - component: {fileID: 4362332931431925238}
   - component: {fileID: 4391949871272124378}
   - component: {fileID: 4384250242016552848}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cockpit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -748,7 +818,8 @@ GameObject:
   - component: {fileID: 5374833097652422096}
   - component: {fileID: 5400419189429438312}
   - component: {fileID: 5392321641158556554}
-  m_Layer: 0
+  - component: {fileID: 1998906074275334337}
+  m_Layer: 8
   m_Name: Thruster_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -816,6 +887,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &1998906074275334337
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5368619740449356124}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.38317573, y: 0.24760741, z: 0.27978522}
+  m_Center: {x: 0, y: 0, z: -0.011132817}
 --- !u!1 &5561852728018377222
 GameObject:
   m_ObjectHideFlags: 0
@@ -827,7 +911,8 @@ GameObject:
   - component: {fileID: 5564688385536517770}
   - component: {fileID: 5574510761924207666}
   - component: {fileID: 5583301720812329168}
-  m_Layer: 0
+  - component: {fileID: 2268791302695983982}
+  m_Layer: 8
   m_Name: Thruster_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -895,6 +980,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &2268791302695983982
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5561852728018377222}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.38317573, y: 0.24760741, z: 0.27978522}
+  m_Center: {x: 0, y: 0, z: -0.011132817}
 --- !u!1 &6457329428123705100
 GameObject:
   m_ObjectHideFlags: 0
@@ -906,7 +1004,8 @@ GameObject:
   - component: {fileID: 6455235818092363834}
   - component: {fileID: 6480326748812947088}
   - component: {fileID: 6469974882442320446}
-  m_Layer: 0
+  - component: {fileID: 7307157888819871854}
+  m_Layer: 8
   m_Name: Winglet_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -974,6 +1073,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &7307157888819871854
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6457329428123705100}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.047735, y: 0.935083, z: 3.435034}
+  m_Center: {x: 0, y: 0.00000047683716, z: 0}
 --- !u!1 &6927372318110430259
 GameObject:
   m_ObjectHideFlags: 0
@@ -985,7 +1097,8 @@ GameObject:
   - component: {fileID: 6929820046881869479}
   - component: {fileID: 6940535435195913735}
   - component: {fileID: 6950762836072442171}
-  m_Layer: 0
+  - component: {fileID: 7910901003023608072}
+  m_Layer: 8
   m_Name: Wing_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1055,6 +1168,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &7910901003023608072
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6927372318110430259}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.608984, y: 1.4176025, z: 19.689623}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7536666967508516659
 GameObject:
   m_ObjectHideFlags: 0
@@ -1066,7 +1192,8 @@ GameObject:
   - component: {fileID: 7530912594644959415}
   - component: {fileID: 7559069418638791261}
   - component: {fileID: 7548560989233349063}
-  m_Layer: 0
+  - component: {fileID: 1322185807516717366}
+  m_Layer: 8
   m_Name: Spoiler_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1134,6 +1261,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &1322185807516717366
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7536666967508516659}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.466827, y: 3.228784, z: 6.759668}
+  m_Center: {x: -2.8533823, y: -1.3282442, z: 0}
 --- !u!1 &7787772562396581922
 GameObject:
   m_ObjectHideFlags: 0
@@ -1145,7 +1285,8 @@ GameObject:
   - component: {fileID: 7784292021246897630}
   - component: {fileID: 7809953040582038960}
   - component: {fileID: 7801380621314947670}
-  m_Layer: 0
+  - component: {fileID: 6963798804745561342}
+  m_Layer: 8
   m_Name: Engine_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1216,6 +1357,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &6963798804745561342
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7787772562396581922}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9274292, y: 1.8203857, z: 5.970825}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7983261089906590801
 GameObject:
   m_ObjectHideFlags: 0
@@ -1227,7 +1381,7 @@ GameObject:
   - component: {fileID: 7980577584110598023}
   - component: {fileID: 7978180485212997809}
   - component: {fileID: 7970094129210334739}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cockpit_Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1307,7 +1461,7 @@ GameObject:
   - component: {fileID: 7980825034568355045}
   - component: {fileID: 7978573909462954941}
   - component: {fileID: 7970546223978782277}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cockpit_Frame_Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1386,7 +1540,8 @@ GameObject:
   - component: {fileID: 8062750182932249273}
   - component: {fileID: 8043288801576440851}
   - component: {fileID: 8050406111222620349}
-  m_Layer: 0
+  - component: {fileID: 365397705263100937}
+  m_Layer: 8
   m_Name: Winglet_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1454,6 +1609,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &365397705263100937
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8064878979479184783}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.047735, y: 0.935083, z: 3.435034}
+  m_Center: {x: -0.00000023841858, y: 0.00000047683716, z: 0}
 --- !u!1 &8240285422255532325
 GameObject:
   m_ObjectHideFlags: 0
@@ -1465,7 +1633,8 @@ GameObject:
   - component: {fileID: 8237661067514221489}
   - component: {fileID: 8225855169827130129}
   - component: {fileID: 8218988490354062381}
-  m_Layer: 0
+  - component: {fileID: 199278242199300205}
+  m_Layer: 8
   m_Name: Wing_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1535,6 +1704,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &199278242199300205
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8240285422255532325}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.608984, y: 1.4176025, z: 19.689623}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &3079170980968462162
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1601,6 +1783,66 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Joystick_Left
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894818027894185977, guid: 3000ef32677019644b2b106195550054,
+        type: 3}
+      propertyPath: NormalizedValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894818027894185977, guid: 3000ef32677019644b2b106195550054,
+        type: 3}
+      propertyPath: NormalizedValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894818027894185977, guid: 3000ef32677019644b2b106195550054,
+        type: 3}
+      propertyPath: NormalizedValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894818027894185977, guid: 3000ef32677019644b2b106195550054,
+        type: 3}
+      propertyPath: NormalizedValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5472953076330063642}
+    - target: {fileID: 4894818027894185977, guid: 3000ef32677019644b2b106195550054,
+        type: 3}
+      propertyPath: NormalizedValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetThrust
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894818027894185977, guid: 3000ef32677019644b2b106195550054,
+        type: 3}
+      propertyPath: NormalizedValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5570234391990545493, guid: 3000ef32677019644b2b106195550054,
+        type: 3}
+      propertyPath: NormalizedValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5570234391990545493, guid: 3000ef32677019644b2b106195550054,
+        type: 3}
+      propertyPath: NormalizedValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5570234391990545493, guid: 3000ef32677019644b2b106195550054,
+        type: 3}
+      propertyPath: NormalizedValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5570234391990545493, guid: 3000ef32677019644b2b106195550054,
+        type: 3}
+      propertyPath: NormalizedValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5472953076330063642}
+    - target: {fileID: 5570234391990545493, guid: 3000ef32677019644b2b106195550054,
+        type: 3}
+      propertyPath: NormalizedValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetThrust
+      objectReference: {fileID: 0}
+    - target: {fileID: 5570234391990545493, guid: 3000ef32677019644b2b106195550054,
+        type: 3}
+      propertyPath: NormalizedValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3000ef32677019644b2b106195550054, type: 3}
@@ -1676,6 +1918,66 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Joystick_Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894818027894185977, guid: 3000ef32677019644b2b106195550054,
+        type: 3}
+      propertyPath: NormalizedValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894818027894185977, guid: 3000ef32677019644b2b106195550054,
+        type: 3}
+      propertyPath: NormalizedValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894818027894185977, guid: 3000ef32677019644b2b106195550054,
+        type: 3}
+      propertyPath: NormalizedValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894818027894185977, guid: 3000ef32677019644b2b106195550054,
+        type: 3}
+      propertyPath: NormalizedValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5472953076330063642}
+    - target: {fileID: 4894818027894185977, guid: 3000ef32677019644b2b106195550054,
+        type: 3}
+      propertyPath: NormalizedValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetPitch
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894818027894185977, guid: 3000ef32677019644b2b106195550054,
+        type: 3}
+      propertyPath: NormalizedValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5570234391990545493, guid: 3000ef32677019644b2b106195550054,
+        type: 3}
+      propertyPath: NormalizedValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5570234391990545493, guid: 3000ef32677019644b2b106195550054,
+        type: 3}
+      propertyPath: NormalizedValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5570234391990545493, guid: 3000ef32677019644b2b106195550054,
+        type: 3}
+      propertyPath: NormalizedValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5570234391990545493, guid: 3000ef32677019644b2b106195550054,
+        type: 3}
+      propertyPath: NormalizedValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5472953076330063642}
+    - target: {fileID: 5570234391990545493, guid: 3000ef32677019644b2b106195550054,
+        type: 3}
+      propertyPath: NormalizedValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetPitch
+      objectReference: {fileID: 0}
+    - target: {fileID: 5570234391990545493, guid: 3000ef32677019644b2b106195550054,
+        type: 3}
+      propertyPath: NormalizedValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3000ef32677019644b2b106195550054, type: 3}

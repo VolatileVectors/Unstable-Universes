@@ -36,15 +36,26 @@ namespace SpaceShip
             _currentThrust = (value * 2f - 1f) * thrustSpeed;
         }
 
+        public void ResetThrustAndRoll()
+        {
+            _currentThrust = 0f;
+            _currentRoll = 0f;
+        }
+
+        public void ResetPitchAndYaw()
+        {
+            _currentPitch = 0f;
+            _currentYaw = 0f;
+        }
+
         public void FixedUpdate()
         {
-            var rotation = spaceShipRb.angularVelocity;
-            rotation.x = _currentPitch;
-            rotation.y = _currentYaw;
-            rotation.z = _currentRoll;
-            spaceShipRb.angularVelocity = rotation;
+            transform.Rotate(_currentYaw, _currentPitch, _currentRoll, Space.Self);
+            /*transform.rotation *= Quaternion.AngleAxis(_currentYaw, transform.up);
+            transform.rotation *= Quaternion.AngleAxis(_currentPitch, transform.right);
+            transform.rotation *= Quaternion.AngleAxis(_currentRoll, transform.forward);*/
 
-            spaceShipRb.velocity = transform.forward * _currentThrust;
+            transform.position = transform.position + transform.forward * _currentThrust;
         }
     }
 }

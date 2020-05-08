@@ -14,10 +14,10 @@ TagManager:
   - 
   - 
   - Environment
-  - 
-  - 
-  - 
-  - 
+  - ControlsA
+  - ControlsB
+  - InteractorA
+  - InteractorB
   - 
   - 
   - 
